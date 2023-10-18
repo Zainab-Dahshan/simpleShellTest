@@ -23,9 +23,9 @@ arguments[z] = NULL;
 
 /**
  * read_line - this is main function that reads
- * a line of input from the user
+ * lines of inputs from a user
  * @path: the PATH environment variable
- * Return: a string containing the user's input,
+ * Return: A string with user's input,
  * or NULL on failure
  */
 char *read_line(char *path)
@@ -87,7 +87,7 @@ arguments[z] = NULL;
 } while (status);
 }
 /**
- * exec_command - this main function that executes
+ * execu_command - this main function that executes
  * command with the given arguments
  * @arguments: Array of arguments
  * Return: void
