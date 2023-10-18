@@ -8,7 +8,7 @@ void exit_shell(void)
 exit(0);
 }
 /**
- * execute_command - this is main function that executes command by
+ * ourexec_command - this is main function that executes command by
  * parsing a command string and using execve.
  * @command: Command string to execute.
  */
