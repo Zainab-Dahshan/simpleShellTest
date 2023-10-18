@@ -7,7 +7,7 @@
  */
 void handle_ChangeDirectory(char *directory)
 {
-char *textmessage = "cd: The directory does`nt exist\n";
+char *textmessage = "cd: the directory does`nt exist\n";
 
 struct stat st = { 0 };
 
