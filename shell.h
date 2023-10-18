@@ -58,5 +58,6 @@ void split_Line(char *line, char **arguments);
 void shell_Loop(void);
 void ourexec_command(char *command);
 int execu_command(char **arguments);
+void handle_command(char *command);
 
 #endif
