@@ -37,7 +37,7 @@ waitpid(pid, &status, 0);
 /**
  * run_shell_non_interactive - main function that runs shell
  * program in non-interactive mode.
- * @filename: Name of a file contains commands.
+ * @filename: Name of a file with commands.
  */
 void run_shell_non_interactive(const char *filename)
 {
@@ -51,7 +51,8 @@ if (file == -1)
 perror("File opening error");
 return;
 }
-while ((bytesRead = getline(&command, &command_size, fdopen(file, "r"))) != -1)
+while ((bytesRead = getline(&command, &command_size,
+				fdopen(file, "r"))) != -1)
 {
 command[strcspn(command, "\n")] = '\0';
 if (strlen(command) > 0)
@@ -69,7 +70,7 @@ free(command);
 /**
  * main - This is the main entry point of the program.
  * @argc: Number of command-line arguments.
- * @argv: An array of strings contains command-line arguments.
+ * @argv: An array of strings with command-line arguments.
  * Description: The first argument is the program name, and the second
  * argument should be name of a file contains commands.
  * Return: 0 on success, otherwise non-zero value on failure.
