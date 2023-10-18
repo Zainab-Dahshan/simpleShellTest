@@ -1,5 +1,4 @@
 #include "shell.h"
-
 /**
  * parse - main function that parses user input into
  * command and parameters.
@@ -19,7 +18,6 @@ token = strtok(NULL, " ");
 }
 parameters[z] = NULL;
 }
-
 /**
  * print_prompt - main function that prints shell prompt.
  */
@@ -27,9 +25,8 @@ void print_prompt(void)
 {
 write(STDOUT_FILENO, "$ ", 2);
 }
-
 /**
- * main - main entry point to the program.
+ * main - this is main entry point to our shell program.
  * @argc: number of command-line arguments.
  * @argv: Array of strings contains list of arguments.
  * Return: 0 on successful execution.
